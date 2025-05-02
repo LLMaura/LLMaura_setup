@@ -29,8 +29,8 @@ This script provides an automated way to install Ollama and Open WebUI on a Debi
     ```bash
     sudo apt update
     sudo apt install -y git
-    git clone https://github.com/alkari/LLMaura.git
-    cd LLMaura
+    git clone https://github.com/LLMaura/LLMaura_setup.git
+    cd LLMaura_setup
     ```` 
 
 2.  Make the script executable:
