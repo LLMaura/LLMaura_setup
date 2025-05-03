@@ -153,7 +153,7 @@ if $OLLAMA_READY && [ ${#OLLAMA_MODELS[@]} -gt 0 ]; then
                 sleep 15
             fi
         done
-        if ! \$MODEL_PULLED; then # \$ needed because it is in single quotes
+        if [[ "\$MODEL_PULLED" == "false" ]]; then # \$ needed because it is in single quotes
             echo "Warning: Failed to pull model ${model} after 5 attempts."
         fi
     done
